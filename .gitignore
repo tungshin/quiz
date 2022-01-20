@@ -1,6 +1,5 @@
 # CakePHP 3
 
-/vendor/*
 /config/app.php
 
 /tmp/cache/models/*
@@ -23,3 +22,17 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+/vendor/**/.git
