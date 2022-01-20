@@ -7,6 +7,4 @@ RUN apt-get update; \
         php8.1-redis; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/www --filename=composer \
-    composer update \
-    composer install
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/www --filename=composer --update
