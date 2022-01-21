@@ -1,10 +1,10 @@
 FROM phpdockerio/php:8.1-fpm
-WORKDIR "/www"
+WORKDIR "/var/www"
 
 RUN apt-get update; \
     apt-get -y --no-install-recommends install \
-        php8.1-mysql \ 
-        php8.1-redis; \
+        php8.1-mysql; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-
+RUN chown $USER:$USER /var/www
+RUN chmod -R 777 /var/www
